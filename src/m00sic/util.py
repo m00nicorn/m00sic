@@ -85,6 +85,13 @@ def build_chord_progression(key: str) -> List[List[int]]:
 def get_random_key() -> str:
     return random.choice(constants.KEYS)
 
+def get_tonic_note(key: str) -> int:
+    return get_starting_note(key, 'I')
+
+# given a key and note, returns a note that achives interval
+def get_interval_note(key: str, note: int, interval: str) -> int:
+
+    return constants.NOTES_FOR_KEY[key][constants.NOTES_FOR_KEY[key].index(note) + interval]
 
 def all_octaves(note):
     return [

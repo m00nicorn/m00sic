@@ -168,6 +168,11 @@ TONIC_NOTE_FOR_KEY = {
     "ASm": None,
 }
 
+INTERVALS = {
+    "MAJOR2ND": 2,
+    "7TH": 2
+}
+
 # add more chords later
 STEPS_FOR_CHORD = {"major_triad": [0, 4, 7]}
 

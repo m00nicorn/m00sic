@@ -288,6 +288,9 @@ class MinorKey(Key):
 
 
 if __name__ == "__main__":
+
+    print(VALID_PITCH_CLASSES)
+
     assert _get_octave(21) == 0
     assert _get_octave(23) == 0
     assert _get_octave(24) == 1
